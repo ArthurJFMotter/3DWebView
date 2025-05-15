@@ -13,11 +13,13 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { ThreeSceneService } from './services/tree-scene.service';
 import { TopologyStateService } from './services/topology-state.service';
+import { TopologyViewerMockComponent } from './pages/topology-viewer-mock/topology-viewer-mock.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         TopologyViewerComponent,
+        TopologyViewerMockComponent,
     ],
     imports: [
         BrowserModule,            

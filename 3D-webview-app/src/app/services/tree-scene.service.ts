@@ -55,10 +55,12 @@ export class ThreeSceneService {
         this.scene = new THREE.Scene();
         this.scene.background = new THREE.Color(0xf0f0f0);
 
-        this.camera = new THREE.PerspectiveCamera(75, canvas.clientWidth / canvas.clientHeight, 0.1, 1000);
-        this.camera.position.set(0, 5, 10);
+        this.camera = new THREE.PerspectiveCamera(15, canvas.clientWidth / canvas.clientHeight, 0.1, 1000);
+        // Adjust these X, Y, Z values as needed.
+        this.camera.position.set(0, 1, 3);
 
         this.renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true });
+
         this.renderer.setSize(canvas.clientWidth, canvas.clientHeight);
         this.renderer.setPixelRatio(window.devicePixelRatio);
         // this.renderer.outputEncoding = THREE.sRGBEncoding; // For better colors if using PBR

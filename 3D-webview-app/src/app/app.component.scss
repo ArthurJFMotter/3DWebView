@@ -1,0 +1,18 @@
+mat-toolbar{
+    background-color: var(--mat-sys-surface-container-high);
+    border: 1px solid var(--mat-sys-outline-variant);
+    box-shadow: 2px 4px 16px var(--mat-sys-outline-variant);
+
+    .example-spacer{
+        flex: 1;
+    }
+
+    a{
+        color: var(--mat-sys-outline);
+        margin-inline: 0.5rem;
+
+        &:hover{
+           color: var(--mat-sys-primary);
+        }
+    }
+}
